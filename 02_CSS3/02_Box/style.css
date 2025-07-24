@@ -1,0 +1,29 @@
+div {
+    background-color: blueviolet;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    border: 5px solid black;
+    margin: 10px
+}
+/*加入box-sizing属性，当其值为border-box时，盒子的总大小为宽高设定的值，称为怪异盒模型*/
+.box1 {
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+}
+/*加入resize属性，可以让用户调整元素的宽高*/
+/*必须与overflow配合*/
+.box2 {
+    resize: both;
+    overflow: auto;
+}
+/*加入box-shadow阴影属性，除第一个和第二个值以外都是可选值，第一个值为水平方向阴影距离，第二个值为竖直方向阴影距离，第三个值为阴影模糊化数值，第四个值为阴影外延数值，第五个值为颜色，第六个值是内阴影（没有则为外阴影）*/
+.box3 {
+    box-shadow: 10px 10px 10px 10px black inset;
+}
+/*加入opacity属性，表示透明度，0为完全透明，1为完全不透明*/
+.box4 {
+    opacity: 0.3;
+}
