@@ -1,0 +1,9 @@
+div {
+    background-color: blueviolet;
+    height: 200px;
+    width: 200px;
+    line-height: 200px;
+    text-align: center;
+    /*transform属性可以对元素进行变换，调整元素的位置，大小，旋转等属性*/
+    transform: translateX(100px) translateY(100px);
+}
