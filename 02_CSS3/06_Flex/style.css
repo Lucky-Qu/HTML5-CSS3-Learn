@@ -1,0 +1,32 @@
+.container{
+    /*将display设置为flex以使用flex布局，其将变为伸缩容器，其内部的子元素为伸缩项目，一个元素可以同时是伸缩容器也是伸缩项目*/
+    display: flex;
+    height: 400px;
+    width: 400px;
+    background-color: blueviolet;
+    /*可以修改主轴的方向来控制元素的排列，修改主轴方向后侧轴会自动改变方向（和主轴垂直）*/
+    flex-direction: row;
+    /*修改主轴换行策略（默认是不换）*/
+    flex-wrap: wrap;
+    /*复合属性*/
+    flex-flow: row wrap;
+    /*调整内项目的主轴对齐方式*/
+    justify-content: center;
+    /*调整侧轴的对齐方式*/
+    align-items: center;
+    /*多行的对齐方式*/
+    align-content: center;
+    /*当空间出现富裕的时候伸缩项目均分*/
+    flex-grow: 1;
+    /*当空间不够时按比例均减*/
+    flex-shrink: 1;
+}
+.item {
+    height: 100px;
+    width: 100px;
+    background-color: orange;
+    border: 1px solid black;
+    box-sizing: border-box;
+    /*可以调整伸缩项目的order来决定其排序*/
+    order: 1;
+}
