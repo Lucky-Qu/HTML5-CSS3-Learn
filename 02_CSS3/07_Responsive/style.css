@@ -1,0 +1,30 @@
+h1 {
+    background-color: orange;
+    height: 200px;
+    width: 200px;
+    font-size: 20px;
+}
+/*媒体查询，当符合print（打印）时，执行内部的CSS样式*/
+@media print {
+    h1 {
+        background-color: transparent;
+    }
+}
+/*检测到视口的宽度小于1000px时执行*/
+@media (max-width: 1000px) {
+    h1 {
+        background-color: dodgerblue;
+    }
+}
+/*视口宽度小于1300并且大于1100时执行*/
+@media (max-width: 1300px) and (min-width: 1100px){
+    h1 {
+        background-color: purple;
+    }
+}
+/*
+或：or / ,
+且：and
+非：not
+肯定：only
+*/
